@@ -99,6 +99,26 @@ This toolbox is ideal for GIS specialists working on USFS Region 9 projects who 
 
 Author: Jeff Erwin Contact: See profile for more details.
 
+DataCompareSUIDsV2.ipynb
+
+This repository includes an ArcGIS Notebook designed to compare two datasets by their unique identifiers (SUIDs) and identify discrepancies between them. The notebook reads two input datasets, compares based on a specified SUID field, and outputs a report highlighting records that are missing, mismatched, or duplicated.
+
+Key features:
+
+Prompts for input file paths and SUID field selection.
+
+Performs side-by-side comparisons to quickly identify inconsistencies.
+
+Outputs results to Excel or CSV for easy review and follow-up.
+
+Designed with clear markdown instructions and modular code for customization.
+
+Ideal for data stewards and GIS analysts performing QA/QC tasks on spatial or tabular datasets where SUID consistency is critical.
+
+Author: Jeff Erwin Contact: See profile for details.
+
+
+
 
 
 
