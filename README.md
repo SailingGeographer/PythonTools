@@ -61,4 +61,24 @@ This tool is ideal for GIS administrators needing an efficient way to communicat
 
 Author: Jeff Erwin Contact: See profile for details.
 
+TimberSlaeAreaClipTool.py
+
+This repository contains a Python script designed for use as an ArcGIS Pro script tool that clips multiple feature classes based on polygon boundaries for timber sale areas. The tool processes all feature classes within a specified workspace, clipping them to match each timber sale polygon, grouping outputs by sale ID, and logging results to an Excel spreadsheet.
+
+Key features include:
+
+Dynamically lists and processes all input feature classes.
+
+Clips intersecting features to timber sale polygons.
+
+Creates organized output datasets within a geodatabase, grouped by sale ID.
+
+Adds a sale_name field to clipped outputs to maintain traceability.
+
+Logs output paths and sale IDs to an Excel workbook, and attempts to open it upon completion.
+
+Ideal for forestry GIS teams managing large datasets across multiple sales, the script improves workflow efficiency and ensures output traceability.
+
+Author: Jeff Erwin Contact: See profile for details.
+
 
