@@ -51,4 +51,14 @@ This tool is ideal for data analysts or GIS professionals who need to distribute
 
 Author: Jeff Erwin Contact: See profile for more information.
 
+SendAGOLNotification.ipynb
+
+This repository provides an ArcGIS Notebook designed to send custom notifications to ArcGIS Online (AGOL) users or groups. The notebook allows admins to craft and dispatch messages programmatically, streamlining communication for updates, maintenance notices, or other announcements.
+
+Built using the ArcGIS API for Python, the notebook prompts the user to input recipient details, message content, and delivery options. It is equipped with clear markdown sections, step-by-step prompts, and guidance to ensure smooth operation even for those new to scripting notifications.
+
+This tool is ideal for GIS administrators needing an efficient way to communicate with AGOL users directly through the platform’s messaging system.
+
+Author: Jeff Erwin Contact: See profile for details.
+
 
