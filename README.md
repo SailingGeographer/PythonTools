@@ -30,3 +30,15 @@ The notebook integrates the ArcGIS API for Python to manage user accounts and us
 This tool is ideal for GIS admins needing an efficient, repeatable way to handle account closures while keeping stakeholders informed.
 
 Author: Jeff Erwin Contact: See profile for further details.
+
+ExcelCombineExcelFilesToOne.ipynb
+
+This repository provides an ArcGIS Notebook (or standalone Python notebook) that automates the process of combining multiple Excel files into a single workbook, with each original file placed into its own sheet. This is useful for consolidating datasets from multiple sources or standardizing data intake workflows.
+
+The notebook uses pandas and openpyxl to read Excel files from a specified directory and write them into a unified Excel workbook. Users are prompted to provide the source folder path and output filename. The notebook also includes basic error handling and markdown instructions to make the process straightforward.
+
+This tool is perfect for data analysts or GIS professionals who manage multiple Excel datasets and need a fast, reliable way to merge them into one file for reporting or further analysis.
+
+Author: Jeff Erwin Contact: See profile for details.
+
+
