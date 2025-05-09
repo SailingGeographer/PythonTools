@@ -41,4 +41,14 @@ This tool is perfect for data analysts or GIS professionals who manage multiple 
 
 Author: Jeff Erwin Contact: See profile for details.
 
+ExcelSplitByColumn.ipynb
+
+This repository contains a Python notebook that splits a single Excel file into multiple workbooks based on the unique values of a specified column. Each resulting Excel file contains only the rows corresponding to one unique value, making it easy to segment data for distribution, reporting, or analysis.
+
+The notebook uses pandas and openpyxl to process the Excel file. Users are prompted to input the path to the source Excel file, the column to split by, and the output folder path. Clear markdown sections and prompts walk the user through setup, execution, and output review.
+
+This tool is ideal for data analysts or GIS professionals who need to distribute data subsets to different stakeholders or organize large datasets quickly and efficiently.
+
+Author: Jeff Erwin Contact: See profile for more information.
+
 
