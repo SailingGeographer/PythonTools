@@ -81,4 +81,24 @@ Ideal for forestry GIS teams managing large datasets across multiple sales, the 
 
 Author: Jeff Erwin Contact: See profile for details.
 
+ProjectClipReprojectTool_ArcGIS_PRO.pyt
+
+This repository contains a custom Python toolbox (.pyt) for ArcGIS Pro designed to streamline the process of clipping and reprojecting geospatial datasets to match the extent and projection of Region 9 forestry projects. The tool allows users to select input data, define the target extent and projection, and output consistent, project-ready datasets in a single automated workflow.
+
+Key features:
+
+Clips input data to a user-specified project boundary.
+
+Reprojects clipped data to a target coordinate system.
+
+User-friendly parameters for input paths, projection selection, and output destinations.
+
+Built to support forestry and environmental planning teams in maintaining clean, standardized datasets.
+
+This toolbox is ideal for GIS specialists working on USFS Region 9 projects who need to prepare spatial data efficiently and consistently across multiple projects.
+
+Author: Jeff Erwin Contact: See profile for more details.
+
+
+
 
