@@ -20,3 +20,13 @@ This tool is valuable for GIS administrators and analysts who manage AGOL groups
 Please consult the notebook for setup steps, required inputs, and output examples. Ensure you have sufficient AGOL permissions to access group content.
 
 Author: Jeff Erwin Contact: See profile for more details.
+
+3_AGOLSendAccountDeleteEmail.ipynb
+
+This repository includes an ArcGIS Notebook designed to automate email notifications for AGOL account deletions. By inputting a list of users marked for deletion, the notebook generates and sends templated emails notifying users of their account status, ensuring clear communication and compliance with organizational policies.
+
+The notebook integrates the ArcGIS API for Python to manage user accounts and uses Python's built-in email libraries (or third-party tools if configured) to send notifications. Clear markdown and input prompts guide the user through uploading the list of accounts, customizing email templates, and executing the notification process.
+
+This tool is ideal for GIS admins needing an efficient, repeatable way to handle account closures while keeping stakeholders informed.
+
+Author: Jeff Erwin Contact: See profile for further details.
