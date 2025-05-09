@@ -9,6 +9,14 @@ The notebook connects to AGOL using the ArcGIS API for Python, retrieves group m
 
 Please refer to the notebook for detailed instructions on setup, required inputs, and sample outputs. Ensure you have appropriate AGOL permissions to access group data.
 
-Author: Jeff ErwinContact: See profile for more information.
+Author: Jeff Erwin Contact: See profile for more information.
 
+2_AGOLGroupContent.ipynb
 
+This repository contains an ArcGIS Notebook that extracts and exports content details from an ArcGIS Online (AGOL) group. By specifying a Group ID, the notebook retrieves a full inventory of the group's hosted items, including titles, item types, owners, creation dates, and last modified dates. The results are exported to an Excel file for easy auditing and record-keeping.
+
+This tool is valuable for GIS administrators and analysts who manage AGOL groups and need insight into content distribution, ownership, and update frequency. The notebook uses the ArcGIS API for Python, pandas for data handling, and includes clear markdown and prompts to walk users through the workflow.
+
+Please consult the notebook for setup steps, required inputs, and output examples. Ensure you have sufficient AGOL permissions to access group content.
+
+Author: Jeff Erwin Contact: See profile for more details.
