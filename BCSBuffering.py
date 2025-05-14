@@ -131,14 +131,14 @@ from arcpy import env
 from datetime import datetime, timedelta
 
 #Common Header Information
-__author__ = "Philip Marley"
+__author__ = "Philip Marley and Jeff Erwin"
 __copyright__ = "R9 IM"
 __credits__ = "Philip Marley, Jeff Erwin, & Walker Johnson"
 __license__ = "NA"
-__version__ =  "0.0.1"
+__version__ =  "0.0.2"
 __maintainer__ = " Jeffery Erwin, Philip Marley, & Walker Johnson"
 __email__ = "jeffery.erwin@usda.gov, philip.marley@usda.gov, george.w.johnson@usda.gov"
-__status__ = "Dev"
+__status__ = "Final"
 
 #add Arc Message
 arcpy.AddMessage("Setting env settings")
