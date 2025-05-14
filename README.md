@@ -117,6 +117,121 @@ Ideal for data stewards and GIS analysts performing QA/QC tasks on spatial or ta
 
 Author: Jeff Erwin Contact: See profile for details.
 
+BCSBuffering.py
+# BCS Hibernacula Location Buffering Script
+
+## Overview
+
+This ArcGIS Pro Python script generates buffer polygons for bat habitat locations (hibernacula, roosts, and maternity capture points) in support of the **Bat Conservation Strategy (BCS)**. It processes site and observation data exported from the USFS Geospatial Interface (GI) Visualization workflow and creates spatial buffers following BCS biological rules and thresholds.
+
+### Author(s)
+
+- Philip Marley  
+- Jeffery Erwin  
+- Walker Johnson
+
+### Maintainer Contact
+
+- jeffery.erwin@usda.gov  
+- philip.marley@usda.gov  
+- george.w.johnson@usda.gov
+
+---
+
+## Features
+
+- Calculates visit sequence to identify most recent data.
+- Determines historic vs. active site status.
+- Evaluates bat species abundance and determines pre/post White-Nose Syndrome (WNS) exposure.
+- Generates individual point records and buffers based on biological thresholds for:
+  - **Hibernacula Sites**
+  - **Roost Sites (including maternity roosts and active snags)**
+  - **Maternity Capture Locations**
+
+- Outputs a final buffer polygon feature class suitable for web mapping or analysis.
+
+---
+
+## Input Requirements
+
+This tool must be run within **ArcGIS Pro** as a script tool, and requires:
+
+1. **Site/Observation Layer**: Exported from the GI tool.
+2. **Capture Layer**: Capture data from GI workflow.
+3. **Output Workspace**: File geodatabase where output buffers will be stored.
+
+---
+
+## Species Codes
+
+- `MYSO`: Indiana Bat (*Myotis sodalis*)
+- `MYSE`: Northern Long-eared Bat (*Myotis septentrionalis*)
+- `MYLU`: Little Brown Bat (*Myotis lucifugus*)
+- `PESU`: Tri-colored Bat (*Perimyotis subflavus*) or (*Pipistrellus subflavus*)
+- `Chiroptera`: All bats
+
+---
+
+## Buffering Rules (Examples)
+
+### Hibernacula Buffers (MYSO/MYLU Combined Abundance)
+| Abundance | Primary | Secondary | Tertiary |
+|----------|---------|-----------|----------|
+| High (≥ 5000) | 500 ft | 2 mi | 5 mi |
+| Moderate (20–4999) | 500 ft | 2 mi | — |
+| Low (1–19) | 500 ft | — | — |
+
+### Roost Buffers
+| Species | Primary | Maternity |
+|---------|---------|-----------|
+| Indiana/Little Brown | 150 ft | 1.8 mi |
+| Northern Long-eared | 150 ft | 0.25 mi |
+| Tricolored | 150 ft | 300 ft |
+
+---
+
+## Output
+
+- `ptBufferFC`: Point feature class with attributes defining site ID, species, buffer type, and distance.
+- `BCSBuffers_<date>`: Final polygon feature class with applied buffer distances.
+
+---
+
+## Dependencies
+
+- ArcGIS Pro (with arcpy)
+- pandas
+- Python 3.x
+
+This script uses the ArcPy site package provided with ArcGIS Pro and is not compatible with standalone Python environments.
+
+---
+
+## How to Run
+
+1. Load `BCSBuffering.py` into an ArcGIS Pro toolbox as a script tool.
+2. Provide the required input layers and workspace.
+3. Run the tool — outputs are added to the map automatically.
+
+---
+
+## License
+
+This script is intended for use within USFS or its partners in bat conservation efforts. Not licensed for commercial distribution.
+
+---
+
+## Version History
+
+- **v0.0.1** – Initial development version
+
+---
+
+## Acknowledgments
+
+This tool supports the USFS Bat Conservation Strategy by automating complex GIS buffering workflows aligned with biological standards. Contributions by R9 Information Management and Bat Conservation teams.
+
+
 
 
 
